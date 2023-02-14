@@ -1,0 +1,139 @@
+.billing-details-input input {
+    margin: 0;
+    letter-spacing: 0.00938em;
+    color: #344857;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: ubuntu;
+    line-height: 18px;
+}
+
+.MuiAvatar-root {
+    &.avatar-initials {
+        font-size: 40px;
+        font-family: ubuntu;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+.select-legal-field-container {
+    .select-legal-field {
+        width: 220px;
+        padding: 16px 20px;
+        border: 1px solid;
+        border-color: #09213399;
+        border-radius: 10px;
+        color: #3a4548;
+        font-family: ubuntu;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: capitalize;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+
+        border-radius: 10px;
+        background-color: #fff;
+        margin-top: 0;
+
+        li {
+            font-size: 16px;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px 16px;
+            font-family: ubuntu;
+            color: #3a4548;
+            text-transform: capitalize;
+            cursor: pointer;
+
+        }
+    }
+}
+
+// select text styles
+
+#select-entity-form [role="button"] {
+    font-family: ubuntu;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+}
+
+
+.bd-single-content form .hide-this-field {
+    display: none;
+}
+
+#select-entity-form {
+
+    & label.Mui-focused {
+        top: 14px;
+    }
+
+    .MuiInputBase-root {
+        height: 48px;
+
+        & #demo-simple-select {
+            position: relative;
+            top: 0px;
+            padding-bottom: 6px;
+        }
+    }
+}
+
+
+// Change bd-container layout completely
+.bd-container {
+    & .css-r2z1up-MuiGrid-root>.MuiGrid-item {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        & .MuiBox-root.css-0 {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            &.removeRowGap {
+                gap: 0;
+            }
+
+            & .bd-single-content {
+                height: auto;
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+// Style labels for input boxes
+.billing-details-input label {
+    font-size: 14px;
+}
+
+
+// Style partitian line b/w account detail and account invoice component
+.bd-single-content.account-invoice {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        opacity: 0.3;
+        width: 90%;
+    }
+}
