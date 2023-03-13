@@ -10,7 +10,7 @@ import {
   forgotPasswordTransformer,
   loginTransformer,
   logoutTransformer,
-  resetPasswordTransformer,
+  resetPasswordTransformer, 
   userInfoTransformer,
   refrshTokenTransformer,
   changePasswordTransformer
@@ -35,7 +35,7 @@ const httpInstance = (transformer: any) => {
   Inst.interceptors.response.use(
     // returning if success response
     (response: any) => { return response },
-    async (error) => {
+    async (error: any) => {
       // Handling error response
 
       // checking api url should exclude interceptor or not
